@@ -1,0 +1,26 @@
+{
+    "##": "This file is a template. Fill the blanks and add or remove fields as necessary.",
+    "version": "0.6.0",
+    "description": "A small/lightweight statically typed scripting language written in Zig.",
+    "homepage": "https://buzz-lang.dev",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/buzz-language/buzz/releases/download/0.6.0/buzz-x86_64-windows-gnu-0.6.0.zip",
+            "hash": "2264a71dbbd62d5e935535b720c0a6eaab1a67ab33b0cf5c2816b2e9ff699bc8",
+            "extract_dir": "buzz-x86_64-windows-gnu-0.6.0"
+        }
+    },
+    "bin": "bin\\buzz.exe",
+    "checkver": {
+        "url": "https://github.com/buzz-language/buzz"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/buzz-language/buzz/releases/download/$version/buzz-x86_64-windows-gnu-$version.zip",
+                "extract_dir": "buzz-x86_64-windows-gnu-$version"
+            }
+        }
+    }
+}
